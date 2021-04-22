@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>About Us</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+				<a href="#" class="navbar-brand">Weather Fortune</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="/" class="nav-link">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="/project" class="nav-link">Project</a>
+						</li>
+						<li class="nav-item">
+							<a href="/contact" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="/about" class="nav-link active">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<br>
+		<div class="body">
+			<center>
+				<h1>About Us</h1>
+				<br>
+				<h4>We combine weather data, technology, and human insight to improve lives.</h4>
+				<img src="{{ url_for('static', filename='about.png') }}" class="img-fluid" style="height: auto;" >
+				<br>
+				<br>
+				<h4>We forecast for almost every longitude and latitude point on Earth.</h4>
+				<h4>Weather Fortune is driven by turning weather into opportunities.</h4>
+			</center>
+			<br>
+		</div>
+		<footer class="footer" style="right: 0px;left: 0px;">
+			<center>
+				<p class="footer-bottom-text">Copyright &copy;WeatherFortune 2021<br>Group - 24 | UEM, Kolkata.</p>
+			</center>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	</body>
+
+</html>

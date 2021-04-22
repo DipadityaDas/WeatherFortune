@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weather Forecast</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+		<style>
+			.header {
+				background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80") no-repeat scroll center;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+				<a href="/" class="navbar-brand">Weather Fortune</a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarMenu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="/" class="nav-link active">Home</a>
+						</li>
+						<li class="nav-item">
+							<a href="/project" class="nav-link">Project</a>
+						</li>
+						<li class="nav-item">
+							<a href="/contact" class="nav-link">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="/about" class="nav-link">About</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<div id="body" class="home">
+			<div class="header">
+				<center>
+					<div>
+						<div class="row">
+							<div class="col-lg-6">
+								<img src="{{ url_for('static', filename='satellite.png') }}" class="img-fluid">
+							</div>
+							<div style="padding-top: 200px;padding-right: -10px;">
+								<h1 style="color: white;">Weather Forecast App</h1>
+								<h4 style="color: #d3d3d3;">This app predictes the weather<br> of any location for next three days.
+								</h4>
+								<a href="/project"><button type="button" class="btn btn-primary">Try
+										Now</button></a>
+							</div>
+						</div>
+					</div>
+				</center>
+			</div>
+
+			<div class="body" style="background-color: rgb(74, 0, 74);color: white;">
+				<div>
+					<br>
+					<center>
+						<h1>Our Mission</h1>
+						<p>We have designed this Cyclone Prediction System to get the detail of up coming
+							Cylone
+							at particular location before it's arrival.</p>
+					</center>
+					<br>
+				</div>
+			</div>
+			<div style="background-color: darkslategrey;color: white;">
+				<center>
+					<br>
+					<h2>Latest News</h2>
+					<br>
+
+					<div class="row">
+						<div class="col-sm">
+							<a
+								href="https://timesofindia.indiatimes.com/city/hyderabad/thunderstorm-activity-till-apr-21/articleshow/82152040.cms"><img
+									src="{{ url_for('static', filename='thunder.jpg') }}" height="80"></a>
+							<h4>Thunderstorm in Hyderabad</h4>
+							<span>April 20, 2021</span>
+							<a href="https://timesofindia.indiatimes.com/city/hyderabad/thunderstorm-activity-till-apr-21/articleshow/82152040.cms"
+								class="more">Read More</a>
+						</div>
+						<div class="col-sm">
+							<a
+								href="https://www.skymetweather.com/content/weather-news-and-analysis/cyclone-season-begins-the-first-cyclone-not-before-april-end/"><img
+									src="{{ url_for('static', filename='cyp6.jpg') }}" alt="" height="60"></a>
+							<h4>Cyclone Season Begins</h4>
+							<span>March 18, 2021</span>
+							<a href="https://www.skymetweather.com/content/weather-news-and-analysis/cyclone-season-begins-the-first-cyclone-not-before-april-end/"
+								class="more">Read More</a>
+						</div>
+					</div>
+					<br>
+				</center>
+			</div>
+		</div>
+		<footer class="footer" style="right: 0px;left: 0px;">
+			<center>
+				<p class="footer-bottom-text">Copyright &copy;WeatherFortune 2021<br>Group - 24 | UEM,
+					Kolkata.</p>
+			</center>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	</body>
+
+</html>
