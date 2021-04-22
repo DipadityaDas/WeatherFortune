@@ -3,7 +3,8 @@ from rest import weather_data
 from flask import Flask, render_template
 from flask.globals import request
 
-app = Flask(__name__,static_folder="static",template_folder="templates")
+app = Flask(__name__)
+
 
 @app.route("/")
 @app.route("/index")
@@ -13,6 +14,7 @@ def home():
 @app.route("/project")
 def project():
 	return render_template("project.html")
+
 
 @app.route("/location", methods=['GET'])
 def location():
@@ -37,4 +39,4 @@ def about():
 	return render_template("about.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host="0.0.0.0",port=5000)
