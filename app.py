@@ -3,7 +3,7 @@ from rest import weather_data
 from flask import Flask, render_template
 from flask.globals import request
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", template_folder="templates")
 
 
 @app.route("/")
